@@ -12,7 +12,6 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background: var(--main-background-colour);
   font-size: 16px;
   color: var(--main-colour);
 }
@@ -90,7 +89,7 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-left: auto;
+  margin-left: 332px;
 }
 .accent {
   color: var(--btn-background-colour);
@@ -133,9 +132,15 @@ img {
   color: var(--btn-background-colour);
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .hero {
   background: var(--main-colour);
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-size: 56px;
@@ -175,10 +180,6 @@ img {
   letter-spacing: 0.04em;
   color: var(--main-background-colour);
 }
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 
 .about {
   padding-bottom: 0;
@@ -204,6 +205,9 @@ img {
   gap: 24px;
 }
 .section-item {
+  width: 264px;
+}
+.section-item-pictures {
   width: auto;
 }
 .section-subtitle {
@@ -221,8 +225,8 @@ img {
 }
 .footer {
   background-color: var(--main-colour);
-  display: flex;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo-link {
   font-family: "Raleway";
@@ -239,27 +243,29 @@ img {
   letter-spacing: 0.02em;
   color: var(--footer-subtitle-colour);
   max-width: 264px;
-  margin-bottom: 100px;
+  margin-top: 16px;
 }
 
-.portfolio-section {
+.portfolio {
+  padding-top: 96px;
 }
-.portfolio-btn-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 96px;
-  margin-bottom: 72px;
-}
+
 .portfolio-section-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+  margin-bottom: 72px;
 }
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid --footer-subtitle-colour;
+}
+.portfolio-cards {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 .portfolio-section-item-btn {
 }
@@ -297,7 +303,8 @@ img {
 
 .portfolio-section-item {
   background: var(--main-background-colour);
-  min-width: 360px;
+  width: 360px;
+  border: 1px solid var(--footer-subtitle-colour);
 }
 
 :root {
