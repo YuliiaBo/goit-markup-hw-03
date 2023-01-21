@@ -250,7 +250,7 @@ img {
   padding-top: 96px;
 }
 
-.portfolio-section-list {
+.portfolio-btn-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -301,6 +301,13 @@ img {
   color: var(--main-background-colour);
 }
 
+.portfolio-section-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
 .portfolio-section-item {
   background: var(--main-background-colour);
   width: 360px;
@@ -315,4 +322,26 @@ img {
   --btn-background-colour: #4d5ae5;
   --btn-background-active: #404bbf;
   --footer-subtitle-colour: #e7e9fc;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+
+  height: 1px;
+
+  margin: -1px;
+
+  border: 0;
+
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
 }
